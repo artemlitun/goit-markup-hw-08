@@ -1,0 +1,16 @@
+.footer__address {
+  padding-top: 20px;
+  &-street {
+    color: $primary-bg-color;
+    font-style: normal;
+    line-height: 1.71;
+  }
+
+  &-link {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+  }
+}
+address {
+  font-style: normal;
+}
