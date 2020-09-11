@@ -1,0 +1,21 @@
+.footer {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-bg-color;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  &__content {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $primary-bg-color;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}

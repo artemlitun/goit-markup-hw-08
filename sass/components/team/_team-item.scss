@@ -1,0 +1,13 @@
+.team {
+  background-color: $secondary-bg-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team__block {
+  display: flex;
+
+  & .team__block-item + .team__block-item {
+    margin-left: 30px;
+  }
+}

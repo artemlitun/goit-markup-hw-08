@@ -1,0 +1,7 @@
+.contacts {
+  // display: flex;
+  // margin-left: auto;
+  & .contacts__item + .contacts__item {
+    // margin-left: 10px;
+  }
+}

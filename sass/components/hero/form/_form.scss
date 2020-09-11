@@ -1,0 +1,21 @@
+.form {
+  padding: 40px;
+  width: 528px;
+  height: 100%;
+  // text-align: left;
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 18px;
+    // костыль с размером текста
+    line-height: 1.15;
+
+    letter-spacing: 0.03em;
+  }
+  &__role-group {
+    margin-top: 30px;
+  }
+}
