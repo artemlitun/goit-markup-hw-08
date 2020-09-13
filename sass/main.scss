@@ -1,6 +1,7 @@
 @import "./utils/veriables";
 @import "./base/normalize";
 @import "./utils/helps";
+@import "./utils/breakpoints";
 
 @import "./components/body/container";
 
@@ -21,11 +22,11 @@
 @import "./components/header/contacts-link";
 @import "./components/header/contacts-svg";
 
-// @import "./components/footer/footer";
-// @import "./components/footer/footer-logo";
-// @import "./components/footer/footer-address";
-// @import "./components/footer/footer-social";
-// @import "./components/footer/footer-form";
+@import "./components/footer/footer";
+@import "./components/footer/footer-logo";
+@import "./components/footer/footer-address";
+@import "./components/footer/footer-social";
+@import "./components/footer/footer-form";
 
 @import "./components/hero/content";
 @import "./components/hero/backdrop";
@@ -39,21 +40,21 @@
 // @import "./components/hero/form/form-field-policy";
 // @import "./components/hero/form/form-field-svg";
 
-// @import "./components/features/features-items";
-// @import "./components/features/features-icons";
+@import "./components/features/features-items";
+@import "./components/features/features-icons";
 
-// @import "./components/about/about-items";
-// @import "./components/about/about-subtitle";
+@import "./components/product/product-items";
+@import "./components/product/product-subtitle";
 
-// @import "./components/team/team-item";
-// @import "./components/team/team-content";
-// @import "./components/team/team-social";
+@import "./components/team/team-item";
+@import "./components/team/team-content";
+@import "./components/team/team-social";
 
-// @import "./components/clients/clients-item";
-// @import "./components/clients/clients-logo";
+@import "./components/clients/clients-item";
+@import "./components/clients/clients-logo";
 
-// @import "./portfolio/portfolio-page";
-// @import "./portfolio/portfolio-nav";
-// @import "./portfolio/portfolio-gallery";
-// @import "./portfolio/portfolio-gallery-content";
-// @import "./portfolio/portfolio-gallery-overlay";
+@import "./portfolio/portfolio-page";
+@import "./portfolio/portfolio-nav";
+@import "./portfolio/portfolio-gallery";
+@import "./portfolio/portfolio-gallery-content";
+@import "./portfolio/portfolio-gallery-overlay";

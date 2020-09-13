@@ -1,12 +1,35 @@
 .portfolio__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-  &-item {
-    width: 370px;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.portfolio__gallery-item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.portfolio__gallery-item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px * 2) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 3) / 3);
     margin: 15px;
   }
 }
+// .portfolio__gallery-item {
+//   width: 370px;
+//   margin: 15px;
+// }
 
 .portfolio__gallery-item-title {
   margin: 0;

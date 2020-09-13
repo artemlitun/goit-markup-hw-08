@@ -4,7 +4,13 @@
   align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
+
   @media screen and (min-width: 768px) {
+    justify-content: baseline;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
   }

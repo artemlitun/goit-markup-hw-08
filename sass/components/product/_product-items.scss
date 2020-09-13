@@ -1,0 +1,28 @@
+.product {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.product {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.product__block {
+  margin-top: 50px;
+  display: flex;
+  z-index: 0;
+}
+.product__block-item {
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 3) / 3);
+    margin: 15px;
+  }
+}

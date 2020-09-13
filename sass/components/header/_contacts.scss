@@ -1,7 +1,15 @@
 .contacts {
-  // display: flex;
-  // margin-left: auto;
-  & .contacts__item + .contacts__item {
-    // margin-left: 10px;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.contacts .contacts__item + .contacts__item {
+  margin-top: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 10px;
   }
 }

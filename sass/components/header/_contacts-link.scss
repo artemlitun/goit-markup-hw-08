@@ -2,10 +2,14 @@
   display: flex;
   color: $accent-text-color;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+
   &:hover,
   &:focus {
     color: $accent-color;

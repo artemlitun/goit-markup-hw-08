@@ -1,17 +1,14 @@
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   width: 480px;
-  padding-left: 15px;
-  padding-right: 15px;
-  // @media screen and (min-width: 900px) {
-  //   & {
-  //     width: 768px;
-  //   }
-  // }
-  // @media screen and (min-width: 900px) {
-  //   & {
-  //     width: 1200px;
-  //   }
-  // }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }

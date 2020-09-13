@@ -1,7 +1,12 @@
-// .menu {
-//   display: flex;
-//   margin-left: 81px;
-//   & .menu__item + .menu__item {
-//     margin-left: 50px;
-//   }
-// }
+.menu {
+  display: flex;
+  align-items: center;
+
+  margin-right: 88px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
+  & .menu__item + .menu__item {
+    margin-left: 50px;
+  }
+}

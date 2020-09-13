@@ -1,9 +1,21 @@
 .portfolio__nav {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
   &-item {
     margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    &-item {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
