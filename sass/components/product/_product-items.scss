@@ -1,5 +1,5 @@
 .product {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 }
@@ -7,16 +7,13 @@
 .product {
   padding-top: 94px;
   padding-bottom: 94px;
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .product__block {
   margin-top: 50px;
   display: flex;
   z-index: 0;
+  margin: -15px;
 }
 .product__block-item {
   position: relative;

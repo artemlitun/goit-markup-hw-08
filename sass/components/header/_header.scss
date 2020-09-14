@@ -5,18 +5,16 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
-  @media screen and (min-width: 768px) {
-    justify-content: baseline;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-  }
-}
+  position: relative;
 
-// .header {
-//   display: flex;
-//   align-items: center;
-// }
+  @media screen and (min-width: 768px) {
+    position: static;
+    justify-content: baseline;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   align-items: center;
+  // }
+}
