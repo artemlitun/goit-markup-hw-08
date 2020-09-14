@@ -1,20 +1,21 @@
 .menu {
   display: block;
   text-align: center;
-  & .menu__item + .menu__item {
-    margin-top: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 88px;
   }
 
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  //   align-items: center;
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
+}
 
-  //   // margin-right: 88px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   margin-right: 305px;
-  // }
-  // & .menu__item + .menu__item {
-  //   margin-left: 50px;
-  // }
+.menu .menu__item + .menu__item {
+  margin-top: 40px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 50px;
+  }
 }
