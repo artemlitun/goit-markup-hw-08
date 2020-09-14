@@ -3,9 +3,6 @@
   justify-content: center;
 
   padding-bottom: 24px;
-  &__item {
-    margin-right: 10px;
-  }
 }
 
 .social__item-link {
@@ -15,7 +12,7 @@
   background-position: center;
   width: 44px;
   height: 44px;
-  margin-right: 10px;
+  // margin-right: 10px;
 
   background-color: $primary-bg-color;
   border-radius: 50%;

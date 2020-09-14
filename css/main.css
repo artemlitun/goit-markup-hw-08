@@ -403,6 +403,7 @@ h2 {
 }
 
 .footer {
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
@@ -594,7 +595,7 @@ address {
 }
 
 .footer__form-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -740,8 +741,7 @@ address {
 
 .hero__modal {
   position: relative;
-  width: 528px;
-  height: 581px;
+  width: 450px;
   top: 50%;
   left: 50%;
   background: #ffffff;
@@ -782,6 +782,157 @@ address {
   fill: #2196f3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form {
+  padding: 40px;
+  width: 450px;
+  height: 100%;
+}
+
+.form__title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+}
+
+.form__role-group {
+  margin-top: 30px;
+}
+
+.form__field-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+.form__field-input:hover, .form__field-input:focus {
+  border: 1px solid #2196f3;
+}
+
+.form__field-input:hover + .form__field-label,
+.form__field-input:not(:placeholder-shown) + .form__field-label {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  color: #2196f3;
+}
+
+.form__field {
+  position: relative;
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+.form__field-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  color: #757575;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__field:hover .form__field-svg,
+.form__field:focus .form__field-svg {
+  fill: #2196f3;
+}
+
+.form__field-textarea {
+  padding: 12px 16px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+
+.form__field-textarea:hover, .form__field-textarea:focus {
+  border: 1px solid #2196f3;
+}
+
+.form__field-comment {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: #757575;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__field-textarea:hover + .form__field-comment {
+  -webkit-transform: translateY(-32px);
+          transform: translateY(-32px);
+  color: #2196f3;
+}
+
+.form__field-policy-label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-left: 7px;
+}
+
+.form__field-policy-label::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 1px solid #212121;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.form__field-policy-checkbox:checked + .form__field-policy-label::before {
+  background-color: #2196f3;
+  background-image: url(../images/web-studio/icons/galochka.svg);
+  background-size: cover;
+  border-color: #2196f3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.form__field-policy-button {
+  margin: 0;
+  margin-top: 30px;
+  padding: 10px 55px 10px 56px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.form__field-svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #212121;
 }
 
 .features {
@@ -893,7 +1044,7 @@ address {
 }
 
 .product__block {
-  margin-top: 50px;
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1053,10 +1204,6 @@ address {
   padding-bottom: 24px;
 }
 
-.social__item {
-  margin-right: 10px;
-}
-
 .social__item-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1070,7 +1217,6 @@ address {
   background-position: center;
   width: 44px;
   height: 44px;
-  margin-right: 10px;
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
