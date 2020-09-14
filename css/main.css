@@ -595,7 +595,7 @@ address {
 }
 
 .footer__form-input {
-  width: 480px;
+  min-width: 100%;
   height: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -611,8 +611,15 @@ address {
   border: 1px solid #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__form-input {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__form-input {
+    min-width: 0;
     width: 358px;
   }
 }
@@ -742,6 +749,7 @@ address {
 .hero__modal {
   position: relative;
   width: 450px;
+  margin-top: 40px;
   top: 50%;
   left: 50%;
   background: #ffffff;
