@@ -1,5 +1,7 @@
 @import "./utils/veriables";
 @import "./base/normalize";
+@import "./base/fonts";
+
 @import "./utils/helps";
 @import "./utils/breakpoints";
 
@@ -29,8 +31,8 @@
 @import "./components/footer/footer-form";
 
 @import "./components/hero/content";
-@import "./components/hero/backdrop";
-@import "./components/hero/modal";
+@import "./components/hero/popups/popups";
+@import "./components/hero/popups/popups-modal";
 
 @import "./components/hero/form/form";
 @import "./components/hero/form/form-field-input";

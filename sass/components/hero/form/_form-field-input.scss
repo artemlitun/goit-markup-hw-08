@@ -1,5 +1,8 @@
 .form__field-input {
-  width: 100%;
+  width: 350px;
+
+  // min-width: 350px;
+  // width: 430px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -10,6 +13,11 @@
   }
 
   &:hover + .form__field-label,
+  &:not(:placeholder-shown) + .form__field-label {
+    transform: translateY(-40px);
+    color: $accent-color;
+  }
+  &:focus + .form__field-label,
   &:not(:placeholder-shown) + .form__field-label {
     transform: translateY(-40px);
     color: $accent-color;

@@ -1,8 +1,5 @@
 .form {
-  padding: 40px;
-  width: 450px;
-  height: 100%;
-  // text-align: left;
+  padding: 40px 10px;
 
   &__title {
     margin-bottom: 30px;
@@ -10,7 +7,6 @@
 
     font-weight: bold;
     font-size: 18px;
-    // костыль с размером текста
     line-height: 1.15;
 
     letter-spacing: 0.03em;

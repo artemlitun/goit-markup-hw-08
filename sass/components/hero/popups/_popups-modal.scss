@@ -1,24 +1,25 @@
-.hero__modal {
+.pop-ups__modal {
   position: relative;
-  width: 450px;
-  margin-top: 40px;
-  // margin-bottom: 94px;
-
-  // height: 100%;
-
-  top: 50%;
-  left: 50%;
+  max-width: 480px;
+  width: 100%;
+  min-height: 581px;
+  padding: 15px;
+  margin: auto;
 
   background: $primary-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 2s ease;
+  transform: translateY(0);
 }
 
-.hero__modal-closed-btn {
+.is-hidden .pop-ups__modal {
+  transform: translateY(-200%);
+}
+
+.pop-ups__modal-closed-btn {
   display: flex;
   justify-content: center;
   align-items: center;
